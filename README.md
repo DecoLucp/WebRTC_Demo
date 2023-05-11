@@ -163,9 +163,9 @@ https_server.listen(443, '0.0.0.0');
 
    我们可以去 [trickle-ice](https://link.juejin.cn/?target=https%3A%2F%2Fwebrtc.github.io%2Fsamples%2Fsrc%2Fcontent%2Fpeerconnection%2Ftrickle-ice%2F) 测试网站进行测试
 
-   STUN 服务器，若能收集到一个类型为“srflx”的候选者，则工作正常。![[bs_turn服务器测试](https://smms.app/image/SMR6Yuz1yBxsvZP)](https://s2.loli.net/2023/05/07/r1N873bg46Zza5P.png)
+   STUN 服务器，若能收集到一个类型为“srflx”的候选者，则工作正常。![[bs_stun服务器测试-不完全版.png](https://smms.app/image/r4CIMT7wujdHsOc)](https://s2.loli.net/2023/05/11/r4CIMT7wujdHsOc.png)
 
-  TURN 服务器，若能收集到一个类型为“relay”的候选者，则工作正常。![bs_turn服务器测试](https://s2.loli.net/2023/05/07/SMR6Yuz1yBxsvZP.png)
+  TURN 服务器，若能收集到一个类型为“relay”的候选者，则工作正常。![bs_turn服务器测试-不完全版](https://s2.loli.net/2023/05/11/of1iBSINtWn8Ta3.png)
 
    由此上图 sturn 和 turn 候选者地址都能成功连接。
 

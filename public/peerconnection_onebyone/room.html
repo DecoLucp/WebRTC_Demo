@@ -1,0 +1,60 @@
+<!--
+ * @Author: Lucp
+ * @Date: 2023-04-16 20:17:25
+ * @LastEditors: Lucp
+ * @LastEditTime: 2023-05-08 21:17:30
+ * @FilePath: \webserver\public\peerconnection_onebyone\room.html
+ * Contact me--email: lucp@88.com
+-->
+
+<html>
+	<head>
+		<title>卢成朋的毕业设计</title>
+		<link href="./css/main.css" rel="stylesheet" />
+		<link href="favicon.ico" rel="icon">
+	</head>
+
+	<body>
+		<div>
+
+
+			<div>
+				<!-- 连接服务器 -->
+				<button id="connserver">连接服务器</button>
+				<!--<button id="start" disabled>Start</button>
+				<button id="call" disabled>Call</button>
+				<button id="hangup" disabled>HangUp</button>
+				-->
+				<!-- 离开会话 -->
+				<button id="leave" disabled>离开会话</button>
+			</div>
+
+			<div>
+				<input id="shareDesk" type="checkbox"/><label for="shareDesk">分享桌面</label>
+			</div>
+
+
+			<div id="preview">
+				<div >
+					<h2>Local:</h2>
+					<!-- 展示当前用户影像 -->
+					<video id="localvideo" autoplay playsinline muted></video>
+					<h2>Offer SDP:</h2>
+					<!-- 展示远程用户影像 -->
+					<textarea id="offer"></textarea>
+				</div>
+				<div>
+					<h2>Remote:</h2>
+					<video id="remotevideo" autoplay playsinline></video>
+					<h2>Answer SDP:</h2>
+					<textarea id="answer"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+		<!-- 浏览器适配 -->
+		<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!--
+ * @Author: Lucp
+ * @Date: 2023-04-16 20:14:52
+ * @LastEditors: Lucp
+ * @LastEditTime: 2023-05-08 21:16:38
+ * @FilePath: \webserver\public\peerconnection_onebyone\index.html
+ * Contact me--email: lucp@88.com
+-->
+
+<html>
+	<head>
+		<title>卢成朋的毕业设计</title>
+		<link rel="stylesheet" href="./css/main.css">
+		<link href="favicon.ico" rel="icon">
+		<script language="javascript" type="text/javascript">
+			function gotoNextPage(){
+				var roomid = document.querySelector('input#room');
+				if(roomid.value === null || roomid.value === ''){
+					alert('roomid is null');
+				}else {
+					window.location.href="room.html?room="+ roomid.value;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table align="center">
+			<tr><td><div>
+					<label>请输入房间号</label>
+					<input type="input" id="room">
+			</div></td></tr>
+			<tr><td><div>
+						<button id="join" onclick="gotoNextPage()">Join</button>
+			</div></td></tr>
+		</table>
+	</body>
+</html>
